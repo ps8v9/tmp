@@ -72,4 +72,5 @@ COB_SYSTEM_GEN ("\344",			0, cob_sys_clear_screen)
 COB_SYSTEM_GEN ("\345",			0, cob_sys_sound_bell)
 COB_SYSTEM_GEN ("\364",			2, cob_sys_xf4)
 COB_SYSTEM_GEN ("\365",			2, cob_sys_xf5)
-
+/* mfisher: Added following line. */
+COB_SYSTEM_GEN ("C$XML",		2, cob_sys_xml)

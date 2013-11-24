@@ -209,7 +209,8 @@ cob_exit_common (void)
 	/* Free library routine stuff */
 
 	if (cobglobptr->cob_term_buff) {
-		free (cobglobptr->cob_term_buff);
+		/* mfisher: commented out following line to prevent SIGSEGV */
+		// free (cobglobptr->cob_term_buff);
 	}
 
 	/* Free cached externals */
@@ -3302,6 +3303,14 @@ cob_sys_printable (void *p1, ...)
 			data[n] = dotrep;
 		}
 	}
+	return 0;
+}
+
+/* mfisher: Added following function. */
+int
+cob_sys_xml (void *p1, ...)
+{
+	printf("Hello from cob_sys_xml_open_file!\n");
 	return 0;
 }
 
