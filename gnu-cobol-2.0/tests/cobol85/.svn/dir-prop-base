@@ -1,0 +1,23 @@
+K 10
+svn:ignore
+V 96
+.deps
+EXEC85
+IC
+IF
+IX
+Makefile
+NC
+OB
+RL
+SG
+SM
+SQ
+ST
+atlocal
+copy
+copyalt
+newcob.val
+summary.log
+
+END
