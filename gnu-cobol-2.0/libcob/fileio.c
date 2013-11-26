@@ -5225,8 +5225,9 @@ cob_sys_copy_file (unsigned char *fname1, unsigned char *fname2)
 	}
 	free (fn2);
 	ret = 0;
-	while ((i = read (fd1, fn1, sizeof(fn1))) > 0) {
-		if (write (fd2, fn1, (size_t)i) < 0) {
+	while ((i = read (fd1, file_open_buff, COB_FILE_BUFF)) > 0) {
+		/* mfisher: manually applied patch from open-cobol-list */
+        	if (write (fd2, file_open_buff, (size_t)i) < 0) { 
 			ret = -1;
 			break;
 		}

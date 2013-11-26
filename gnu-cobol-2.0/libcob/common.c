@@ -209,9 +209,7 @@ cob_exit_common (void)
 	/* Free library routine stuff */
 
 	if (cobglobptr->cob_term_buff) {
-		/* mfisher: Commented out the following line as a hack to */
-		/*	    suppress a SIGSEGV on GOBACK.                 */
-		//free (cobglobptr->cob_term_buff);
+		free (cobglobptr->cob_term_buff);
 	}
 
 	/* Free cached externals */

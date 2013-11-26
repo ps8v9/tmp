@@ -6,13 +6,11 @@
        01  CALL-STATUS  PIC S9(3).
 
        PROCEDURE DIVISION.
-           CALL "C$XML"
-               USING 14, "foo", "bar"
+           CALL "C$COPY"
+               USING "test.cbl" "copy.cbl" "S"
                GIVING CALL-STATUS
                ON EXCEPTION
                    DISPLAY "Argh!"
            END-CALL
-
-           DISPLAY "call status: " CALL-STATUS
            GOBACK
            .
