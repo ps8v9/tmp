@@ -3386,6 +3386,13 @@ cob_sys_justify (void *p1, ...)
 	return 0;
 }
 
+int
+cob_sys_xml (void *p1, ...)
+{
+	printf("hello from cob_sys_xml!\n");
+	return 42;
+}
+
 void
 cob_set_locale (cob_field *locale, const int category)
 {

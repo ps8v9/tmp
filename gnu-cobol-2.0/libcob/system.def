@@ -66,6 +66,7 @@ COB_SYSTEM_GEN ("C$PRINTABLE",		1, cob_sys_printable)
 COB_SYSTEM_GEN ("C$SLEEP",		1, cob_sys_sleep)
 COB_SYSTEM_GEN ("C$TOLOWER",		2, cob_sys_tolower)
 COB_SYSTEM_GEN ("C$TOUPPER",		2, cob_sys_toupper)
+COB_SYSTEM_GEN ("C$XML",		1, cob_sys_xml)
 
 COB_SYSTEM_GEN ("\221",			2, cob_sys_x91)
 COB_SYSTEM_GEN ("\344",			0, cob_sys_clear_screen)

@@ -1267,6 +1267,7 @@ COB_EXPIMP int	cob_sys_sleep		(const void *);
 COB_EXPIMP int	cob_sys_calledby	(void *);
 COB_EXPIMP int	cob_sys_justify		(void *, ...);
 COB_EXPIMP int	cob_sys_printable	(void *, ...);
+COB_EXPIMP int	cob_sys_xml		(void *, ...);
 
 /* Utilities */
 
