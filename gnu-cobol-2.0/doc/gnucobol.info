@@ -1,4 +1,4 @@
-This is gnucobol.info, produced by makeinfo version 4.12 from
+This is gnucobol.info, produced by makeinfo version 4.13 from
 gnucobol.texi.
 
 INFO-DIR-SECTION COBOL
@@ -342,8 +342,8 @@ overwritten by one of the following options:
 
 `-free'
      Free format.  The program-text area starts in column 1 and
-     continues till the end of line.  Effectively 255 characters in
-     GNU Cobol.
+     continues till the end of line.  Effectively 255 characters in GNU
+     Cobol.
 
 `-fixed'
      Fixed format.  Source code is divided into a 1-6 column sequence
@@ -2198,48 +2198,48 @@ value-of-clause:			obsolete
 
 
 Tag Table:
-Node: Top1018
-Node: Getting Started3258
-Node: Hello World!3436
-Node: Compile4821
-Node: Compiler Options5181
-Node: Help Options5856
-Ref: Help Options-Footnote-17498
-Node: Built Target7541
-Ref: Built Target-Footnote-19657
-Node: Source Format9710
-Node: Warning Options10621
-Node: Configuration Options11806
-Node: Debug Switches12552
-Node: Miscellaneous13639
-Node: Multiple Sources14450
-Node: Static Linking15131
-Node: Dynamic Linking16657
-Ref: Dynamic Linking-Footnote-118056
-Ref: Dynamic Linking-Footnote-218109
-Node: Building Library18162
-Node: Using Library18546
-Node: C Interface19118
-Node: Main C Program19463
-Node: Static C to COBOL20379
-Node: Dynamic C to COBOL21867
-Node: Static COBOL to C23318
-Node: Dynamic COBOL to C24751
-Node: Customize25157
-Node: Customizing Compiler25382
-Node: Customizing Library25961
-Node: Optimize26277
-Node: Optimize Options26581
-Node: Optimize Call27122
-Node: Optimize Binary27501
-Node: Debug28082
-Node: Debug Options28239
-Node: Appendix A28583
-Node: Appendix B34463
-Node: Appendix C36123
-Node: Appendix D45821
-Node: Appendix E48237
-Node: Appendix F49191
-Node: Appendix G50528
+Node: Top1015
+Node: Getting Started3254
+Node: Hello World!3431
+Node: Compile4815
+Node: Compiler Options5174
+Node: Help Options5848
+Ref: Help Options-Footnote-17489
+Node: Built Target7532
+Ref: Built Target-Footnote-19647
+Node: Source Format9700
+Node: Warning Options10610
+Node: Configuration Options11794
+Node: Debug Switches12539
+Node: Miscellaneous13625
+Node: Multiple Sources14435
+Node: Static Linking15115
+Node: Dynamic Linking16640
+Ref: Dynamic Linking-Footnote-118038
+Ref: Dynamic Linking-Footnote-218091
+Node: Building Library18144
+Node: Using Library18527
+Node: C Interface19098
+Node: Main C Program19442
+Node: Static C to COBOL20357
+Node: Dynamic C to COBOL21844
+Node: Static COBOL to C23294
+Node: Dynamic COBOL to C24726
+Node: Customize25131
+Node: Customizing Compiler25355
+Node: Customizing Library25933
+Node: Optimize26247
+Node: Optimize Options26550
+Node: Optimize Call27090
+Node: Optimize Binary27468
+Node: Debug28048
+Node: Debug Options28204
+Node: Appendix A28547
+Node: Appendix B34426
+Node: Appendix C36082
+Node: Appendix D45779
+Node: Appendix E48194
+Node: Appendix F49147
+Node: Appendix G50483
 
 End Tag Table
