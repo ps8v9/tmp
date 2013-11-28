@@ -9,15 +9,13 @@
            CALL "C$NetInit"
                GIVING CALL-STATUS
                ON EXCEPTION
-                   DISPLAY "Argh! (C$NetInit)"
+                   DISPLAY "Exception when calling C$NetInit."
            END-CALL
-           DISPLAY "call status after NetInit: " CALL-STATUS
 
            CALL "C$NetCleanup"
                ON EXCEPTION
-                   DISPLAY "Argh! (C$NetCleanup)"
+                   DISPLAY "Exception when calling C$NetCleanup."
            END-CALL
-           DISPLAY "NetCleanup complete"
 
            GOBACK
            .

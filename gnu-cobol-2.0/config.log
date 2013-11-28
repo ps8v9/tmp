@@ -582,7 +582,7 @@ configure:11200: checking how to hardcode library paths into programs
 configure:11225: result: immediate
 configure:11319: checking for shl_load
 configure:11319: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-/tmp/ccZZXQP6.o: In function `main':
+/tmp/ccEVFU0i.o: In function `main':
 /home/adger/GitHub/tmp/gnu-cobol-2.0/conftest.c:62: undefined reference to `shl_load'
 collect2: error: ld returned 1 exit status
 configure:11319: $? = 1
@@ -704,7 +704,7 @@ configure: failed program was:
 configure:11357: result: no
 configure:11362: checking for dlopen
 configure:11362: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-/tmp/ccoK0dfA.o: In function `main':
+/tmp/ccwTFEuv.o: In function `main':
 /home/adger/GitHub/tmp/gnu-cobol-2.0/conftest.c:62: undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
 configure:11362: $? = 1
@@ -785,7 +785,7 @@ configure:11602: $? = 0
 configure:11620: result: yes
 configure:11625: checking whether a statically linked program can dlopen itself
 configure:11705: gcc -std=gnu99 -o conftest -g -O2  -DHAVE_DLFCN_H  -Wl,--export-dynamic -static conftest.c -ldl  >&5
-/tmp/ccxiuS5i.o: In function `main':
+/tmp/cc3ikNnI.o: In function `main':
 /home/adger/GitHub/tmp/gnu-cobol-2.0/configure:11684: warning: Using 'dlopen' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
 configure:11708: $? = 0
 /lib/i386-linux-gnu/: cannot read file data: Is a directory
@@ -1182,7 +1182,7 @@ configure:12987: $? = 0
 configure:12987: result: yes
 configure:12993: checking for _doprnt
 configure:12993: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-/tmp/ccYvin3x.o: In function `main':
+/tmp/cc4lChYR.o: In function `main':
 /home/adger/GitHub/tmp/gnu-cobol-2.0/conftest.c:78: undefined reference to `_doprnt'
 collect2: error: ld returned 1 exit status
 configure:12993: $? = 1
@@ -1334,7 +1334,7 @@ configure:13031: $? = 0
 configure:13031: result: yes
 configure:13031: checking for getexecname
 configure:13031: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-/tmp/ccmY8oDt.o: In function `main':
+/tmp/ccasXinX.o: In function `main':
 /home/adger/GitHub/tmp/gnu-cobol-2.0/conftest.c:92: undefined reference to `getexecname'
 collect2: error: ld returned 1 exit status
 configure:13031: $? = 1
@@ -2198,7 +2198,7 @@ configure: failed program was:
 | }
 configure:16260: checking for dlopen in -lc
 configure:16285: gcc -std=gnu99 -o conftest -g -O2   conftest.c -lc   >&5
-/tmp/ccSZerX5.o: In function `main':
+/tmp/cczIk01h.o: In function `main':
 /home/adger/GitHub/tmp/gnu-cobol-2.0/conftest.c:87: undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
 configure:16285: $? = 1

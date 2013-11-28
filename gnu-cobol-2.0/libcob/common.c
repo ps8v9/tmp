@@ -3409,8 +3409,8 @@ cob_sys_netcleanup (void)
 {
 	if (curl)
 		curl_easy_cleanup(curl);
-
 	curl_global_cleanup();
+	return;
 }
 
 int
