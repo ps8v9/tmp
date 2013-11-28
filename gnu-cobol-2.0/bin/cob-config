@@ -29,7 +29,7 @@ includedir=${prefix}/include
 
 version="2.0.0"
 cflags="-I/usr/local/include -pipe"
-libs="-L${exec_prefix}/lib -lcob -lm -lgmp -ldb -ldl"
+libs="-L${exec_prefix}/lib -lcob -lm -lcurl -lgmp -ldb -ldl"
 
 usage()
 {

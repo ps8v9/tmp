@@ -582,7 +582,7 @@ configure:11200: checking how to hardcode library paths into programs
 configure:11225: result: immediate
 configure:11319: checking for shl_load
 configure:11319: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-/tmp/ccfTbJKq.o: In function `main':
+/tmp/ccZZXQP6.o: In function `main':
 /home/adger/GitHub/tmp/gnu-cobol-2.0/conftest.c:62: undefined reference to `shl_load'
 collect2: error: ld returned 1 exit status
 configure:11319: $? = 1
@@ -704,7 +704,7 @@ configure: failed program was:
 configure:11357: result: no
 configure:11362: checking for dlopen
 configure:11362: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-/tmp/ccM0sAR6.o: In function `main':
+/tmp/ccoK0dfA.o: In function `main':
 /home/adger/GitHub/tmp/gnu-cobol-2.0/conftest.c:62: undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
 configure:11362: $? = 1
@@ -785,7 +785,7 @@ configure:11602: $? = 0
 configure:11620: result: yes
 configure:11625: checking whether a statically linked program can dlopen itself
 configure:11705: gcc -std=gnu99 -o conftest -g -O2  -DHAVE_DLFCN_H  -Wl,--export-dynamic -static conftest.c -ldl  >&5
-/tmp/ccaSs8ja.o: In function `main':
+/tmp/ccxiuS5i.o: In function `main':
 /home/adger/GitHub/tmp/gnu-cobol-2.0/configure:11684: warning: Using 'dlopen' in statically linked applications requires at runtime the shared libraries from the glibc version used for linking
 configure:11708: $? = 0
 /lib/i386-linux-gnu/: cannot read file data: Is a directory
@@ -1182,7 +1182,7 @@ configure:12987: $? = 0
 configure:12987: result: yes
 configure:12993: checking for _doprnt
 configure:12993: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-/tmp/cc38sjO9.o: In function `main':
+/tmp/ccYvin3x.o: In function `main':
 /home/adger/GitHub/tmp/gnu-cobol-2.0/conftest.c:78: undefined reference to `_doprnt'
 collect2: error: ld returned 1 exit status
 configure:12993: $? = 1
@@ -1334,7 +1334,7 @@ configure:13031: $? = 0
 configure:13031: result: yes
 configure:13031: checking for getexecname
 configure:13031: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-/tmp/ccKBZ1y6.o: In function `main':
+/tmp/ccmY8oDt.o: In function `main':
 /home/adger/GitHub/tmp/gnu-cobol-2.0/conftest.c:92: undefined reference to `getexecname'
 collect2: error: ld returned 1 exit status
 configure:13031: $? = 1
@@ -1549,44 +1549,44 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:13546: checking gmp.h usability
-configure:13546: gcc -std=gnu99 -c -g -O2  conftest.c >&5
-configure:13546: $? = 0
-configure:13546: result: yes
-configure:13546: checking gmp.h presence
-configure:13546: gcc -std=gnu99 -E  conftest.c
-configure:13546: $? = 0
-configure:13546: result: yes
-configure:13546: checking for gmp.h
-configure:13546: result: yes
-configure:13559: checking for __gmpz_init in -lgmp
-configure:13584: gcc -std=gnu99 -o conftest -g -O2   conftest.c -lgmp   >&5
-configure:13584: $? = 0
-configure:13593: result: yes
-configure:13639: gcc -std=gnu99 -o conftest -g -O2   conftest.c  -lgmp >&5
-configure:13639: $? = 0
-configure:13639: ./conftest
-configure:13639: $? = 0
-configure:13651: checking for raise
-configure:13664: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-configure:13664: $? = 0
-configure:13666: result: yes
-configure:13676: checking for nanosleep
-configure:13689: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-configure:13689: $? = 0
-configure:13691: result: yes
-configure:13811: checking for fdatasync
-configure:13811: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-configure:13811: $? = 0
-configure:13811: result: yes
-configure:13811: checking for sigaction
-configure:13811: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-configure:13811: $? = 0
-configure:13811: result: yes
-configure:13855: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-configure:13855: $? = 0
-configure:13855: ./conftest
-configure:13855: $? = 1
+configure:13550: checking gmp.h usability
+configure:13550: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:13550: $? = 0
+configure:13550: result: yes
+configure:13550: checking gmp.h presence
+configure:13550: gcc -std=gnu99 -E  conftest.c
+configure:13550: $? = 0
+configure:13550: result: yes
+configure:13550: checking for gmp.h
+configure:13550: result: yes
+configure:13563: checking for __gmpz_init in -lgmp
+configure:13588: gcc -std=gnu99 -o conftest -g -O2   conftest.c -lgmp   >&5
+configure:13588: $? = 0
+configure:13597: result: yes
+configure:13643: gcc -std=gnu99 -o conftest -g -O2   conftest.c  -lgmp >&5
+configure:13643: $? = 0
+configure:13643: ./conftest
+configure:13643: $? = 0
+configure:13655: checking for raise
+configure:13668: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
+configure:13668: $? = 0
+configure:13670: result: yes
+configure:13680: checking for nanosleep
+configure:13693: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
+configure:13693: $? = 0
+configure:13695: result: yes
+configure:13815: checking for fdatasync
+configure:13815: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
+configure:13815: $? = 0
+configure:13815: result: yes
+configure:13815: checking for sigaction
+configure:13815: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
+configure:13815: $? = 0
+configure:13815: result: yes
+configure:13859: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
+configure:13859: $? = 0
+configure:13859: ./conftest
+configure:13859: $? = 1
 configure: program exited with status 1
 configure: failed program was:
 | /* confdefs.h */
@@ -1672,42 +1672,42 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:13864: checking whether NLS is requested
-configure:13873: result: yes
-configure:13914: checking for msgfmt
+configure:13868: checking whether NLS is requested
+configure:13877: result: yes
+configure:13918: checking for msgfmt
 configure: trying /usr/bin/msgfmt...
 0 translated messages.
-configure:13946: result: /usr/bin/msgfmt
-configure:13955: checking for gmsgfmt
-configure:13986: result: /usr/bin/msgfmt
-configure:14037: checking for xgettext
+configure:13950: result: /usr/bin/msgfmt
+configure:13959: checking for gmsgfmt
+configure:13990: result: /usr/bin/msgfmt
+configure:14041: checking for xgettext
 configure: trying /usr/bin/xgettext...
 /usr/bin/xgettext: warning: file `/dev/null' extension `' is unknown; will try C
-configure:14069: result: /usr/bin/xgettext
-configure:14115: checking for msgmerge
+configure:14073: result: /usr/bin/xgettext
+configure:14119: checking for msgmerge
 configure: trying /usr/bin/msgmerge...
-configure:14146: result: /usr/bin/msgmerge
-configure:14661: checking for CFPreferencesCopyAppValue
-configure:14688: result: no
-configure:14695: checking for CFLocaleCopyCurrent
-configure:14722: result: no
-configure:14771: checking for GNU gettext in libc
-configure:14791: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-configure:14791: $? = 0
-configure:14800: result: yes
-configure:15546: checking whether to use NLS
-configure:15548: result: yes
-configure:15551: checking where the gettext function comes from
-configure:15562: result: libc
-configure:15629: checking for nl_langinfo and CODESET
-configure:15645: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-configure:15645: $? = 0
-configure:15654: result: yes
-configure:15666: checking for initscr in -lncursesw
-configure:15691: gcc -std=gnu99 -o conftest -g -O2   conftest.c -lncursesw   >&5
+configure:14150: result: /usr/bin/msgmerge
+configure:14665: checking for CFPreferencesCopyAppValue
+configure:14692: result: no
+configure:14699: checking for CFLocaleCopyCurrent
+configure:14726: result: no
+configure:14775: checking for GNU gettext in libc
+configure:14795: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
+configure:14795: $? = 0
+configure:14804: result: yes
+configure:15550: checking whether to use NLS
+configure:15552: result: yes
+configure:15555: checking where the gettext function comes from
+configure:15566: result: libc
+configure:15633: checking for nl_langinfo and CODESET
+configure:15649: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
+configure:15649: $? = 0
+configure:15658: result: yes
+configure:15670: checking for initscr in -lncursesw
+configure:15695: gcc -std=gnu99 -o conftest -g -O2   conftest.c -lncursesw   >&5
 /usr/bin/ld: cannot find -lncursesw
 collect2: error: ld returned 1 exit status
-configure:15691: $? = 1
+configure:15695: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "GNU Cobol"
@@ -1798,12 +1798,12 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15700: result: no
-configure:15748: checking for initscr in -lncurses
-configure:15773: gcc -std=gnu99 -o conftest -g -O2   conftest.c -lncurses   >&5
+configure:15704: result: no
+configure:15752: checking for initscr in -lncurses
+configure:15777: gcc -std=gnu99 -o conftest -g -O2   conftest.c -lncurses   >&5
 /usr/bin/ld: cannot find -lncurses
 collect2: error: ld returned 1 exit status
-configure:15773: $? = 1
+configure:15777: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "GNU Cobol"
@@ -1894,12 +1894,12 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15782: result: no
-configure:15842: checking for initscr in -lpdcurses
-configure:15867: gcc -std=gnu99 -o conftest -g -O2   conftest.c -lpdcurses   >&5
+configure:15786: result: no
+configure:15846: checking for initscr in -lpdcurses
+configure:15871: gcc -std=gnu99 -o conftest -g -O2   conftest.c -lpdcurses   >&5
 /usr/bin/ld: cannot find -lpdcurses
 collect2: error: ld returned 1 exit status
-configure:15867: $? = 1
+configure:15871: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "GNU Cobol"
@@ -1990,12 +1990,12 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15876: result: no
-configure:15919: checking for initscr in -lcurses
-configure:15944: gcc -std=gnu99 -o conftest -g -O2   conftest.c -lcurses   >&5
+configure:15880: result: no
+configure:15923: checking for initscr in -lcurses
+configure:15948: gcc -std=gnu99 -o conftest -g -O2   conftest.c -lcurses   >&5
 /usr/bin/ld: cannot find -lcurses
 collect2: error: ld returned 1 exit status
-configure:15944: $? = 1
+configure:15948: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "GNU Cobol"
@@ -2086,26 +2086,26 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:15953: result: no
-configure:16114: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-configure:16114: $? = 0
-configure:16114: ./conftest
-configure:16114: $? = 0
-configure:16146: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-configure:16146: $? = 0
-configure:16146: ./conftest
-configure:16146: $? = 0
-configure:16161: checking for Berkeley DB library with version 5.1
-configure:16190: gcc -std=gnu99 -o conftest -g -O2   conftest.c  -ldb >&5
-configure:16190: $? = 0
-configure:16190: ./conftest
-configure:16190: $? = 0
-configure:16205: result: yes
-configure:16207: BDB library version 5.1 found as -ldb
-configure:16244: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-configure:16244: $? = 0
-configure:16244: ./conftest
-configure:16244: $? = 1
+configure:15957: result: no
+configure:16118: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
+configure:16118: $? = 0
+configure:16118: ./conftest
+configure:16118: $? = 0
+configure:16150: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
+configure:16150: $? = 0
+configure:16150: ./conftest
+configure:16150: $? = 0
+configure:16165: checking for Berkeley DB library with version 5.1
+configure:16194: gcc -std=gnu99 -o conftest -g -O2   conftest.c  -ldb >&5
+configure:16194: $? = 0
+configure:16194: ./conftest
+configure:16194: $? = 0
+configure:16209: result: yes
+configure:16211: BDB library version 5.1 found as -ldb
+configure:16248: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
+configure:16248: $? = 0
+configure:16248: ./conftest
+configure:16248: $? = 1
 configure: program exited with status 1
 configure: failed program was:
 | /* confdefs.h */
@@ -2196,12 +2196,12 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:16256: checking for dlopen in -lc
-configure:16281: gcc -std=gnu99 -o conftest -g -O2   conftest.c -lc   >&5
-/tmp/ccWDiciA.o: In function `main':
+configure:16260: checking for dlopen in -lc
+configure:16285: gcc -std=gnu99 -o conftest -g -O2   conftest.c -lc   >&5
+/tmp/ccSZerX5.o: In function `main':
 /home/adger/GitHub/tmp/gnu-cobol-2.0/conftest.c:87: undefined reference to `dlopen'
 collect2: error: ld returned 1 exit status
-configure:16281: $? = 1
+configure:16285: $? = 1
 configure: failed program was:
 | /* confdefs.h */
 | #define PACKAGE_NAME "GNU Cobol"
@@ -2293,24 +2293,24 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:16290: result: no
-configure:16298: checking for dlopen in -ldl
-configure:16332: result: yes
-configure:16343: checking for dladdr in -ldl
-configure:16368: gcc -std=gnu99 -o conftest -g -O2   conftest.c -ldl   >&5
-configure:16368: $? = 0
-configure:16377: result: yes
-configure:16582: checking for working strftime
-configure:16614: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-configure:16614: $? = 0
-configure:16614: ./conftest
-configure:16614: $? = 0
-configure:16616: result: yes
-configure:16628: checking if size of long int = size of long long
-configure:16651: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
-configure:16651: $? = 0
-configure:16651: ./conftest
-configure:16651: $? = 1
+configure:16294: result: no
+configure:16302: checking for dlopen in -ldl
+configure:16336: result: yes
+configure:16347: checking for dladdr in -ldl
+configure:16372: gcc -std=gnu99 -o conftest -g -O2   conftest.c -ldl   >&5
+configure:16372: $? = 0
+configure:16381: result: yes
+configure:16586: checking for working strftime
+configure:16618: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
+configure:16618: $? = 0
+configure:16618: ./conftest
+configure:16618: $? = 0
+configure:16620: result: yes
+configure:16632: checking if size of long int = size of long long
+configure:16655: gcc -std=gnu99 -o conftest -g -O2   conftest.c  >&5
+configure:16655: $? = 0
+configure:16655: ./conftest
+configure:16655: $? = 1
 configure: program exited with status 1
 configure: failed program was:
 | /* confdefs.h */
@@ -2403,20 +2403,20 @@ configure: failed program was:
 |   ;
 |   return 0;
 | }
-configure:16656: result: no
-configure:16669: checking for gcc pointer sign option
-configure:16682: gcc -std=gnu99 -c -g -O2 -Wno-pointer-sign  conftest.c >&5
-configure:16682: $? = 0
-configure:16684: result: yes
-configure:16721: checking for aligned attribute
-configure:16734: gcc -std=gnu99 -c -g -O2  conftest.c >&5
-configure:16734: $? = 0
-configure:16736: result: yes
-configure:16905: checking for ld bind now option
-configure:16918: gcc -std=gnu99 -o conftest -g -O2 -pipe   -Wl,-z,relro,-z,now,-O1 conftest.c  >&5
-configure:16918: $? = 0
-configure:16919: result: yes
-configure:17164: creating ./config.status
+configure:16660: result: no
+configure:16673: checking for gcc pointer sign option
+configure:16686: gcc -std=gnu99 -c -g -O2 -Wno-pointer-sign  conftest.c >&5
+configure:16686: $? = 0
+configure:16688: result: yes
+configure:16725: checking for aligned attribute
+configure:16738: gcc -std=gnu99 -c -g -O2  conftest.c >&5
+configure:16738: $? = 0
+configure:16740: result: yes
+configure:16909: checking for ld bind now option
+configure:16922: gcc -std=gnu99 -o conftest -g -O2 -pipe   -Wl,-z,relro,-z,now,-O1 conftest.c  >&5
+configure:16922: $? = 0
+configure:16923: result: yes
+configure:17168: creating ./config.status
 
 ## ---------------------- ##
 ## Running config.status. ##
@@ -2648,7 +2648,7 @@ COB_HAS_ISAM='yes'
 COB_KEYWORD_INLINE=''
 COB_LDFLAGS=''
 COB_LIBRARY_PATH='${exec_prefix}/lib/gnu-cobol'
-COB_LIBS='-L${exec_prefix}/lib -lcob -lm -lgmp -ldb -ldl'
+COB_LIBS='-L${exec_prefix}/lib -lcob -lm -lcurl -lgmp -ldb -ldl'
 COB_MAKE_IX_FALSE='#'
 COB_MAKE_IX_TRUE=''
 COB_MODULE_EXT='so'
@@ -2681,7 +2681,7 @@ INTLLIBS=''
 INTL_MACOSX_LIBS=''
 LD='/usr/bin/ld'
 LDFLAGS=' -Wl,-z,relro,-z,now,-O1'
-LIBCOB_LIBS='-lm -lgmp -ldb -ldl'
+LIBCOB_LIBS='-lm -lcurl -lgmp -ldb -ldl'
 LIBICONV='-liconv'
 LIBINTL=''
 LIBOBJS=''

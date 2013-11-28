@@ -13204,6 +13204,10 @@ else
 	LIBCOB_LIBS="-lm"
 fi
 
+/* mfisher: begin dirty hack */
+LIBCOB_LIBS="$LIBCOB_LIBS -lcurl"
+/* mfisher: end dirty hack */
+
 # Configure options.
 
 

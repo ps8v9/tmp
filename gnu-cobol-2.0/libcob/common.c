@@ -56,6 +56,11 @@
 #include <locale.h>
 #endif
 
+/* mfisher: begin new code */
+#include <curl/curl.h>
+#include <stdio.h>
+/* mfisher: end new code */
+
 /* Force symbol exports */
 #define	COB_LIB_EXPIMP
 
@@ -80,6 +85,10 @@ struct cob_external {
 #define COB_ERRBUF_SIZE		1024
 
 /* Local variables */
+
+/* mfisher: begin new code */
+CURL				*curl;
+/* mfisher: end new code */
 
 static int			cob_initialized = 0;
 static int			cob_argc;
@@ -3384,12 +3393,34 @@ cob_sys_justify (void *p1, ...)
 	return 0;
 }
 
+/* mfisher: begin new code */
+
+int
+cob_sys_netinit (void)
+{
+	printf("hello from cob_sys_netinit!\n");
+	curl_global_init(CURL_GLOBAL_ALL);
+	curl = curl_easy_init();
+	return (curl) ? 0 : 1;
+}
+
+void
+cob_sys_netcleanup (void)
+{
+	if (curl)
+		curl_easy_cleanup(curl);
+
+	curl_global_cleanup();
+}
+
 int
 cob_sys_xml (void *p1, ...)
 {
 	printf("hello from cob_sys_xml!\n");
 	return 42;
 }
+
+/* mfisher: end new code */
 
 void
 cob_set_locale (cob_field *locale, const int category)

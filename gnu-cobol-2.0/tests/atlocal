@@ -36,7 +36,7 @@ PATH="${abs_top_builddir}/cobc:${abs_top_builddir}/bin:${abs_top_builddir}/libco
 export PATH
 export COB_CFLAGS="-I${abs_top_srcdir} -I${abs_top_srcdir}/libcob -I/usr/local/include -pipe"
 export COB_LDFLAGS="-L${abs_top_builddir}/libcob/.libs "
-export COB_LIBS="-L${abs_top_builddir}/libcob/.libs -lcob -lm -lgmp -ldb -ldl"
+export COB_LIBS="-L${abs_top_builddir}/libcob/.libs -lcob -lm -lcurl -lgmp -ldb -ldl"
 export COB_CONFIG_DIR="${abs_top_srcdir}/config"
 export COB_COPY_DIR="${abs_top_srcdir}/copy"
 export LD_LIBRARY_PATH="${abs_top_builddir}/libcob/.libs:$LD_LIBRARY_PATH"

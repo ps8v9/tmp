@@ -2,7 +2,7 @@
 #define COB_CC           "gcc -std=gnu99"
 #define COB_CFLAGS       "-I/usr/local/include -pipe"
 #define COB_LDFLAGS      ""
-#define COB_LIBS         "-L/usr/local/lib -lcob -lm -lgmp -ldb -ldl"
+#define COB_LIBS         "-L/usr/local/lib -lcob -lm -lcurl -lgmp -ldb -ldl"
 #define COB_CONFIG_DIR   "/usr/local/share/gnu-cobol/config"
 #define COB_COPY_DIR     "/usr/local/share/gnu-cobol/copy"
 #define COB_LIBRARY_PATH "/usr/local/lib/gnu-cobol"
