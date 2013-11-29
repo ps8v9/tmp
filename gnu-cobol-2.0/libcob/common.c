@@ -3405,6 +3405,14 @@ cob_sys_netinit (void)
 }
 
 void
+cob_sys_netfree (const void *p)
+{
+	if (p)
+		free(p);
+	return;
+}
+
+void
 cob_sys_netcleanup (void)
 {
 	if (curl)
