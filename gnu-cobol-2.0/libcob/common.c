@@ -58,7 +58,6 @@
 
 /* mfisher: begin new code */
 #include <curl/curl.h>
-#include <stdio.h>
 /* mfisher: end new code */
 
 /* Force symbol exports */
@@ -87,7 +86,7 @@ struct cob_external {
 /* Local variables */
 
 /* mfisher: begin new code */
-CURL				*curl;
+static CURL			*curl;
 /* mfisher: end new code */
 
 static int			cob_initialized = 0;
@@ -3398,27 +3397,32 @@ cob_sys_justify (void *p1, ...)
 int
 cob_sys_net_init (void)
 {
-	printf("hello from cob_sys_netinit!\n");
 	curl_global_init(CURL_GLOBAL_ALL);
 	curl = curl_easy_init();
 	return (curl) ? 0 : 1;
 }
 
-void
-cob_sys_neti_free (const void *p)
+int
+cob_sys_net_free (void *p)
 {
+	COB_CHK_PARMS (C$NetFree, 1);
+
 	if (p)
 		free(p);
-	return;
+
+	return 0;
 }
 
-void
+int
 cob_sys_net_cleanup (void)
 {
 	if (curl)
 		curl_easy_cleanup(curl);
 	curl_global_cleanup();
-	return;
+
+	/* C$NetCleanup returns void, but cob_sys_net_cleanup returns int.    */
+        /* This is consistent with how C$NARG and cob_sys_return_args() work. */
+	return 0;
 }
 
 /* mfisher: end new code */

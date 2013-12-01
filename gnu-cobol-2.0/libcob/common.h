@@ -1269,8 +1269,8 @@ COB_EXPIMP int	cob_sys_justify		(void *, ...);
 COB_EXPIMP int	cob_sys_printable	(void *, ...);
 /* mfisher: begin new code */
 COB_EXPIMP int	cob_sys_net_init	(void);
-COB_EXPIMP int	cob_sys_net_free	(const void *);
-COB_EXPIMP void	cob_sys_net_cleanup	(void);
+COB_EXPIMP int	cob_sys_net_free	(void *);
+COB_EXPIMP int	cob_sys_net_cleanup	(void);
 /* mfisher: end new code */
 
 /* Utilities */
