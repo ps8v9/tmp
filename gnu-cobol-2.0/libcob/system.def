@@ -67,10 +67,9 @@ COB_SYSTEM_GEN ("C$SLEEP",		1, cob_sys_sleep)
 COB_SYSTEM_GEN ("C$TOLOWER",		2, cob_sys_tolower)
 COB_SYSTEM_GEN ("C$TOUPPER",		2, cob_sys_toupper)
 /* mfisher: begin new code */
-COB_SYSTEM_GEN ("C$XML",		1, cob_sys_xml)
-COB_SYSTEM_GEN ("C$NetInit",		0, cob_sys_netinit)
-COB_SYSTEM_GEN ("C$NetFree",		1, cob_sys_netfree)
-COB_SYSTEM_GEN ("C$NetCleanup",		0, cob_sys_netcleanup)
+COB_SYSTEM_GEN ("C$NetInit",		0, cob_sys_net_init)
+COB_SYSTEM_GEN ("C$NetFree",		1, cob_sys_net_free)
+COB_SYSTEM_GEN ("C$NetCleanup",		0, cob_sys_net_cleanup)
 /* mfisher: end new code */
 
 COB_SYSTEM_GEN ("\221",			2, cob_sys_x91)

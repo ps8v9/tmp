@@ -3396,7 +3396,7 @@ cob_sys_justify (void *p1, ...)
 /* mfisher: begin new code */
 
 int
-cob_sys_netinit (void)
+cob_sys_net_init (void)
 {
 	printf("hello from cob_sys_netinit!\n");
 	curl_global_init(CURL_GLOBAL_ALL);
@@ -3405,7 +3405,7 @@ cob_sys_netinit (void)
 }
 
 void
-cob_sys_netfree (const void *p)
+cob_sys_neti_free (const void *p)
 {
 	if (p)
 		free(p);
@@ -3413,19 +3413,12 @@ cob_sys_netfree (const void *p)
 }
 
 void
-cob_sys_netcleanup (void)
+cob_sys_net_cleanup (void)
 {
 	if (curl)
 		curl_easy_cleanup(curl);
 	curl_global_cleanup();
 	return;
-}
-
-int
-cob_sys_xml (void *p1, ...)
-{
-	printf("hello from cob_sys_xml!\n");
-	return 42;
 }
 
 /* mfisher: end new code */
